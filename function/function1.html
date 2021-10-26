@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>javascript funtion</h2>
+    <p id="demo"></p>
+    <script>
+      function myfuncion(p1, p2) {
+        return p1 * p2;
+      }
+      let result = myfuncion(4, 5);
+
+      //body안에 특정 요소 찾기, 아이디를 갖고 있는 경우 .getElementById()
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <h1 id="header1">header1</h1>
+    <h2 id="header2">header2</h2>
+
+    <script>
+      //요소(element) 찾아주기 => 요소의 변화를 주기 위함
+      //innerHTML : 태그 해석이 필요한 경우 사용
+      //innerText : 태그 해석이 필요하지 않는 경우 사용
+      //text 변화 : innerHTML, innerText 사용
+      let demo = document.getElementById("demo");
+      //console.log(demo);
+      console.log(demo.innerHTML);
+      console.log(demo.innerText);
+
+      let header1 = document.getElementById("header1");
+      //console.log(header1);
+      console.log(header1.innerHTML);
+      console.log(header1.innerText);
+
+      //   header1.innerHTML = "<i>Change</i>";
+      header1.innerText = "<i>Change</i>";
+
+      let header2 = document.getElementById("header2");
+      //console.log(header2);
+      console.log(header2.innerHTML);
+      console.log(header2.innerText);
+    </script>
+  </body>
+</html>

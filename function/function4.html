@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>javascript funtion</h2>
+    <p id="demo"></p>
+    <!--버튼을 누르면 결과값이 demo 자리에 보여지기-->
+    <button type="button" onclick="test(1,2)">결과확인</button>
+    <script>
+      function test(a, b, c, d) {
+        //**매개변수 숫자가 맞지 않은 경우 매게변수 초기화
+        //자리에 숫자가 들어오면 그걸로 사용하고, 들어오지 않는다면 여기에
+        //입력한 숫자를 사용하도록 설정
+        b = b || 5;
+        c = c || 57;
+        d = d || 273;
+
+        let result = a + b + c + d;
+        document.getElementById("demo").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
